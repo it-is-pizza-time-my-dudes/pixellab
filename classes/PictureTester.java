@@ -78,6 +78,34 @@ public class PictureTester
       water.fixUnderwater();
       water.explore();
   }
+  /** tests mirrorVerticalRightToLeft*/
+  public static void testMirrorRightToLeft(){
+      Picture pizza = new Picture("pizzatime.jpg");
+      pizza.explore();
+      pizza.mirrorVerticalRightToLeft();
+      pizza.explore();
+  }
+  /** tests  mirrorHorizantal */
+  public static void testMirrorHorizantal(){
+      Picture pizza = new Picture("pizzatime.jpg");
+      pizza.explore();
+      pizza.mirrorHorizantal();
+      pizza.explore();
+    }
+  /** test mirrorHorizantalBottomToTop*/
+  public static void mirrorHorizantalBottomToTop(){
+      Picture pizza = new Picture("pizzatime.jpg");
+      pizza.explore();
+      pizza.mirrorHorizantalBottomToTop();
+      pizza.explore();
+  }
+  /** test mirrrorDiagonly */
+  public static void mirrrorDiagonly(){
+      Picture pizza = new Picture("pizzatime.jpg");
+      pizza.explore();
+      pizza.mirrrorDiagonly();
+      pizza.explore();
+  }
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -107,6 +135,7 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
-    testkeepOnlyBlue();  
+    //testkeepOnlyBlue();  
+    testMirrorRightToLeft();
   }
 }
