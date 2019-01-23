@@ -1,0 +1,31 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.util.*;
+import javax.swing.*;
+public class ForFriend
+{
+    public static void main(String[]args){
+        //creates a window makes it visible and closable
+        JFrame window = new JFrame();
+        window.setTitle("yahtzee");//string sets the title in the corner
+        window.setSize(640,480);//sets size
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//dont change
+        window.setVisible(true);//dont change
+        
+        //creates a place to put your button
+        JPanel mainPanel = new JPanel(new BorderLayout());//don't change anything
+        
+        //creates a button
+        JButton button1 = new JButton("roll");//change string to change text
+        //makes the button do stuff
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(java.awt.event.ActionEvent e) {
+                //put code here to run when the button is clicked
+            }
+        });
+        //adds everything to the panel
+        mainPanel.add(button1);
+        window.add(mainPanel);
+    }
+}
